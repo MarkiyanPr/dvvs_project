@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: dvvs-project
+    runtime: node
+    env: node
+    repo: https://github.com/MarkiyanPr/dvvs_project.git # Replace with your repository URL
+    branch: main
+    plan: free
+    region: oregon # Change to a region closer to your audience if needed
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        value: mongodb://<your-mongo-host>:27017/blog # Replace with your MongoDB URI
