@@ -13,4 +13,5 @@ services:
       - key: NODE_ENV
         value: production
       - key: MONGO_URI
-        value: mongodb://<your-mongo-host>:27017/blog # Replace with your MongoDB URI
+        value: mongodb://markijan303:zPxJ2BIwp9cIiC05@185.157.121.151:27017/blog
+
