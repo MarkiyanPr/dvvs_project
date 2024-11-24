@@ -20,7 +20,7 @@ async function fetchPosts() {
             <p>${post.description}</p>
             <p><strong>Author:</strong> ${post.author}</p>
             <button onclick="editPost('${post._id}', '${post.title}', '${post.description}', '${post.author}')">Edit</button>
-            <button onclick="deletePost('${post._id}')">Delete</button>
+            <button class="post_delete" onclick="deletePost('${post._id}')">Delete</button>
         `;
         postsDiv.appendChild(postEl);
     });
